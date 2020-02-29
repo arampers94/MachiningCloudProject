@@ -1,0 +1,11 @@
+<h1 class="results">{{ message }}</h1>
+<app-search (updateName)="updateName($event)"></app-search>
+<div class="all-tools-list">
+  <app-tool-item *ngFor="let tool of tools" [tool]="tool" (newChildren)="setChildren($event)">
+  </app-tool-item>
+</div>
+<div [ngClass]="setClasses()">
+  <p>
+    No results.
+  </p>
+</div>

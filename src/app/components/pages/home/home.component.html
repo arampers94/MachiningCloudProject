@@ -1,0 +1,13 @@
+<div class="home-wrapper">
+  <div class="home">
+    <h1 class="title">Welcome to MachiningCloud</h1>
+    <form (ngSubmit)="onSubmit($event)">
+      <input type="text" name="name" [(ngModel)]="name" placeholder="Search for tools..." />
+      <button type="submit" (click)="onSubmit($event)">Search</button>
+      <button routerLink="/all-tools">All Tools</button>
+    </form>
+    <p class="error" [ngClass]="setClasses()">
+      {{ errorMessage }}
+    </p>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+.home-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.home {
+  text-align: center;
+  transform: translateY(-65px);
+}
+
+.title {
+  font-size: 50px;
+}
+
+.error {
+  color: red;
+  display: none;
+}
+
+.show {
+  display: block;
+}

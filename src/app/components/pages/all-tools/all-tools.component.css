@@ -1,0 +1,8 @@
+.all-tools-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.no-results {
+  display: none;
+}
